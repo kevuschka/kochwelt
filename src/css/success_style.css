@@ -1,0 +1,132 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    }
+
+.response {
+    width: 34rem;
+    height: 32rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 16px 32px;
+    box-shadow: 0px 5px 2rem rgb(0 0 0 / 30%);
+    border-radius: 9px;
+    color: rgb(0,128,1);
+    font-family: 'Raleway', sans-serif;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.btnStyle1 {
+    /* background-color: #008000;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: var(--boxshadowPicture);
+    border-radius: 5px;
+    border: none; */
+    background-color: rgb(0,128,1);
+    color: white;
+    padding: 11px 40px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    text-decoration: none;
+}
+
+.response  h4 {
+    color: rgba(2, 137, 2, 0.577);
+}
+
+.response a {
+    text-align: center;
+}
+
+.btnStyle1:hover {
+    cursor: pointer;
+    background-color: rgb(2, 137, 2);
+}
+
+
+.response img {
+    width: 10rem;
+}
+
+@media screen and (max-height: 700px) { /* Damit auch bei schmalen (oben/unten) das Formular zentriert drin ist */
+    .response {
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .response {
+        width: 26rem;
+        height: 29rem;
+        padding: 20px 20px;
+    }
+
+    .response img {
+        width: 7rem;
+    }
+
+    .response h1 {
+        font-size: 28px;
+    }
+
+    .response  h4 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    /* .content {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    } */
+
+    .response {
+        width: 19rem;
+        height: 18rem;
+        justify-content: space-around;
+    }
+
+    .response img {
+        width: 2rem;
+    }
+
+    .response h1 {
+        font-size: 19px;
+    }
+
+    .response h4 {
+        font-size: 13px;
+        text-align: center;
+    }
+}

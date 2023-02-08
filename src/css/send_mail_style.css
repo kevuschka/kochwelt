@@ -1,0 +1,203 @@
+
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.content {
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.form_container {
+    width: 34rem;
+    height: 32rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 16px 32px;
+    box-shadow: 0px 5px 2rem rgb(0 0 0 / 30%);
+    border-radius: 2px;
+
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form_container p {
+    text-align: left;
+}
+
+.form_headline {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.form_headline h3 {
+    font-size: 48px;
+    width: 16rem;
+    font-weight: 400;
+    /* color: rgb(0,128,1); */
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    margin:0;
+
+    justify-content: space-between;
+}
+
+.form_headline img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.form_section {
+    align-self: flex-start;
+}
+
+form input, textarea {
+    background-color: #efefef;
+    width: 20rem;
+    border-radius: 10px;
+    border:none;
+    font-size: 18px;
+    padding: 10px 10px;
+    color: rgb(67, 67, 67);
+    font-family: 'Raleway', sans-serif;
+}
+
+form p {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0,128,1);
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+form textarea {
+    height: 9rem;
+    width: 30rem;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #f3f6f3;
+    background-color: rgb(0,128,1);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: rgb(10, 135, 10);
+    cursor: pointer;
+    
+}
+@media screen and (max-height: 700px) { /* Damit auch bei schmalen (oben/unten) das Formular zentriert drin ist */
+    .form_container {
+        height: 30rem;
+    }
+
+    .form_headline {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    form {
+        width: 20rem;
+    }
+
+    .form_container {
+        padding: 15px 32px;
+        width: 26rem;
+        height: 32rem;
+    }
+
+    form textarea { 
+        width: 20rem;
+        height: 12rem;
+    }
+
+    .form_headline h3 {
+        font-size: 32px;
+        width: 11rem;
+    }
+
+    .form_headline img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    button {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .form_section {
+        margin-top: 2rem;
+    }
+
+    .form_container {
+        height: 33rem;
+        width: 19rem;
+    }
+
+    .form_headline h3 {
+        font-size: 26px;
+        width: 9rem;
+    }
+
+    .form_headline img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    form {
+        width: 15rem;
+    }
+
+    form p {
+        font-size: 13px;
+    }
+
+    form input, textarea {
+        width: 15rem;
+    }
+
+    form textarea {
+        width: 15rem;
+        height: 15rem;
+        font-size: 14px;
+    }
+
+    button {
+        width: 14rem;
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    
+}

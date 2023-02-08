@@ -1,0 +1,418 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.fontsize18 {
+    font-size: 18px;
+}
+
+/* ##################################### */
+.mainBody{
+    padding: 3rem 0;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.mainBody img {
+    border-radius: 9px;
+}
+
+/* ##################################### Rezept des Tages */
+.dayRecept {
+    padding-bottom: 48px;
+    padding-right: 12rem;
+    padding-left: 12rem;
+}
+
+.dayRecept img {
+    width: 500px;
+    object-fit: cover;
+}
+
+.dayReceptRight {
+    flex-direction: column;
+    
+    align-items: flex-start;
+    margin-left: 64px;
+}
+
+.dayReceptRight h3 {
+    margin-top: 2rem;
+}
+
+.dayRecept .dayReceptRight a {
+    background-color: rgb(0,128,1);
+    color: white;
+    padding: 11px 40px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    margin-top: 6rem;
+}
+
+.dayReceptRight a:hover {
+    cursor: pointer;
+    background-color: rgb(2, 137, 2);
+}
+/* ##################################### Mehr Rezepte */
+.moreRecept {
+    width: 100%;
+    background-color: #EFEFEF;
+    padding-bottom: 20px;
+    padding-right: 12rem;
+    padding-left: 12rem;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+.moreRecept h3  {
+    margin: 32px 0 32px 0;
+    align-self: center;
+}
+
+.moreRecept_container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.moreReceptItem {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.moreReceptItem img {
+    width: 210px;
+    height: 200px;
+    object-fit: cover;
+}
+/* #################################### Pfanne vs Wok */
+.PfanneVsWok {
+    padding: 0px 12rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.PfanneVsWok_headline {
+    align-self: center;
+}
+
+.PfanneVsWok_info {
+    justify-content: space-between;
+}
+
+.PfanneVsWok_info img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.PfanneVsWok h3  {
+    margin: 32px 0 32px 0;
+}
+
+.PfanneVsWok_info p {
+    max-width: 60rem;
+    margin: 0;
+}
+
+/* ##### RESPONSIVE ############################################### */
+
+@media screen and (max-width: 1275px) {
+    /* .moreRecept {
+        padding: 0px 32px 20px 32px;
+    } */
+
+    .dayRecept img {
+        width: 450px;
+    }
+
+    .moreReceptItem img {
+        width: 198px;
+    }
+
+    .PfanneVsWok_info img {
+        width: 198px;
+        margin-left: 1rem;
+    }
+
+    .PfanneVsWok_info p {
+        font-size: 16px;
+    }
+
+    .dayRecept .dayReceptRight a {
+        margin-top: 4rem;
+        }
+}
+
+/*################################### */
+
+@media screen and (max-width: 1200px) {
+    .PfanneVsWok_info p {
+        font-size: 14px;
+    }
+
+    .dayRecept img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .moreReceptItem img {
+        width: 150px;
+        height: 140px;
+    }
+
+    .moreReceptItem p {
+        font-size: 13px;
+    }
+
+    .PfanneVsWok_info img {
+        width: 200px;
+        margin-left: 1rem;
+    }
+
+    .dayRecept .dayReceptRight a {
+        margin-top: 2rem;
+        }
+}
+
+/*################################### */
+
+@media screen and (max-width: 1002px) {
+    .dayRecept {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .moreRecept {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .PfanneVsWok {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    /* .dayRecept img {
+        width: 200px;
+    }  */
+
+    .moreReceptItem p {
+        font-size: 16px;
+    }
+
+    .dayReceptRight p {
+        font-size: 16px;
+    }
+
+    /* .moreReceptItem img, .PfanneVsWok_info img {
+        width: 220px;
+        height: 200px;
+    } */
+
+    /* .PfanneVsWok {
+        padding: 0px 50px 0px 50px;
+    } */
+
+    .PfanneVsWok_info p {
+            font-size: 14px;
+    }
+    
+}
+/* ################################# */
+
+@media screen and (max-width: 800px) {
+    .dayRecept {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .moreRecept {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .PfanneVsWok {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .dayRecept img {
+        width: 280px;
+    }
+
+    .dayReceptRight p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .PfanneVsWok_info img {
+        width: 150px;
+        height: 140px;
+    }
+
+    .PfanneVsWok {
+        padding: 0px 37px 0px 37px;
+    }
+
+    .PfanneVsWok_info p {
+        font-size: 10px;
+    }
+
+    .dayRecept .dayReceptRight a {
+        margin-top: 1rem;
+        }
+}
+
+/* ################################# */
+
+@media screen and (max-width: 700px) {
+
+    .moreReceptItem img {
+        width: 130px;
+        height: 120px;
+    }
+
+    .moreReceptItem p {
+        font-size: 12px;
+    }
+
+    .PfanneVsWok_info img {
+        width: 130px;
+        height: 120px;
+    }
+}
+
+/* ################################# */
+
+@media screen and (max-width: 602px) {
+
+    .moreReceptItem p {
+        font-size: 18px;
+    }
+
+    .moreRecept {
+        background-color: white;
+    }
+
+    .mainBody {
+        padding-top: 0;
+    }
+
+    .dayRecept {
+        padding: 0 32px 0 32px;
+    }
+
+    .dayRecept img {
+        display: none;
+    }
+
+    .dayRecept {
+        /* Bild mit Powerpoint gemacht: weiß mit 60% Deckkraft */
+        background-image: url(../img/burger_blur.jpg); 
+        background-size: cover ;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: black;
+        height: 28rem;
+        
+    }
+
+    .dayReceptRight {
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .dayReceptRight h3 {
+        font-size: 48px;
+    }
+
+    .dayReceptRight p {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .moreRecept {
+        padding: 0;
+    }
+
+    .moreRecept h3 {
+        font-size: 32px;
+    }
+
+    .moreRecept_container {
+        flex-direction: column;
+    }
+
+    .moreReceptItem:nth-child(2), .moreReceptItem:nth-child(4)  {
+        background-color: #EFEFEF;
+        width: 100%;
+    }
+
+    .moreReceptItem:nth-child(2), .moreReceptItem:nth-child(3), .moreReceptItem:nth-child(4)  {
+        padding-top: 24px;
+    }
+
+    .moreReceptItem img, .PfanneVsWok img {
+        width: 25rem;
+        height: 9rem;
+    }
+
+
+    .PfanneVsWok_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .PfanneVsWok_info p {
+        font-size: 15px;
+    }
+
+    .PfanneVsWok_info img {
+        margin-top: 32px;
+    }
+}
+/* ################################# */
+
+@media screen and (max-width: 430px) {
+    .dayReceptRight h3 {
+        font-size: 40px;
+    }
+
+    .dayReceptRight p {
+        font-size: 20px;
+    }
+
+    .moreRecept h3 {
+        font-size: 24px;
+    }
+
+    .moreReceptItem img, .PfanneVsWok img {
+        width: 18rem;
+        height: 9rem;
+    }
+
+    .PfanneVsWok h3 {
+        font-size: 18px;
+    }
+
+    
+}

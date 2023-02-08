@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="src/css/receptOfDay-style.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Raleway Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Edu+QLD+Beginner:wght@500&family=Edu+SA+Beginner:wght@500&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- INSERT FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/img/icons/favicon-16x16.png">
+    <link rel="manifest" href="src/img/icons/site.webmanifest">
+    <link rel="mask-icon" href="src/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#f3f3f3">    
+    <!-- <script src="src/js/main.js"></script> -->
+    <script src="src/js/dropdown.js"></script>
+</head>
+<body onload="includeHTML()">
+    <div class="headerSticky" w3-include-html="header.html"></div>
+    <div class="mainBody flex">
+        <div class="dayRecept flex">
+            <div><img src="src/img/burger.jpg" alt="Burger Salat"></div>
+            <div class="dayReceptRight flex">
+                <h3>BicMac Salat</h3>
+                <p>Das Gericht für jede Party!<br> Der Geschmack erinnert an einen Welt bekannten Burger!</p>
+                <a href="bigmac-salad.html">Rezept öffnen!</a>
+            </div>
+        </div>
+    
+        <div class="moreRecept flex">
+            <h3>Lust auf was Neues?</h3>
+            <div class="moreRecept_container flex">
+                <div class="moreReceptItem flex">
+                    <a href="bacon-cheese-muffin.html"><img src="src/img/bcmuffin.jpg" alt="Bacon Käse Muffin"></a>
+                    <p>Bacon Käse Muffins</p>
+                </div>
+                <div class="moreReceptItem flex">
+                    <a href="raspberry-dessert.html"><img src="src/img/raspberry.jpg" alt="Himbeer Dessert"></a>
+                    <p>Himbeer Dessert</p>
+                </div>
+                <div class="moreReceptItem flex">
+                    <a href="greek-salad.html"><img src="src/img/salad.jpg" alt="Griechischer Salat"></a>
+                    <p>Griechischer Salat</p>
+                </div>
+                <div class="moreReceptItem flex">
+                    <a href="french-croissants.html"><img src="src/img/french_croissants.jpg" alt="Französische Croissants"></a>
+                    <p>Französische Criossants</p>
+                </div>
+            </div>
+        </div>
+        <div class="PfanneVsWok flex">
+            <h3 class="PfanneVsWok_headline">Pfanne vs. Wok - Was ist besser?</h3>
+            <div class="PfanneVsWok_info flex">
+                <p>Der klassische Wok hat eine ganz andere Form. Deutlich größer als eine Bratpfanne ist er. Mit dieser besonderen Form hat er in der Mitte den heißesten Punkt, die äußeren Flächen dagegen
+                   haben beim Braten eine deutlich niedrigere Temperatur. Ein Vorteil ist das leichte und schnelle Rühren von Gerichten.<br><br> Weil der Rand des Woks höher als der von normalen Bratpfannen ist, erleichtert
+                   er so das Schwenken des Garguts. So fällt beim Rühren und Mischen nichts aus dem Wok.<br>
+                   Der Wok ist ein Alleskönner. Mit ihm lässt sich buchstäblich im Handumdrehen braten, frittieren, schmorren, blanchieren, kochen und dünsten. Ein Wunderteil aus Asien!
+                </p>
+                <img src="src/img/wok.jpg" alt="Wokpfanne">
+            </div>
+        </div>
+    </div>
+    <div class="footer" w3-include-html="footer.html"></div>
+</body>
+</html>

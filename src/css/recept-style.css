@@ -1,0 +1,310 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.fontsize18 {
+    font-size: 18px;
+}
+
+.content {
+    padding: 4rem 12rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: auto;
+    /* background-color: aqua; */
+}
+
+.headline-section, .ingredient_section, .preparation_section, .credit_section  {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.headline-section h1 {
+    margin: 0;
+}
+
+.headline-section .img {
+    margin-top: 21px;
+    margin-bottom: 32px;
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 9px;
+}
+
+.headline_mini_info{
+    margin: 0;
+
+    align-items: flex-start;
+    width: 28rem;
+}
+
+.mini_info {
+    padding: 5px 12px;
+    margin-right: 20px;
+    border-radius: 9px;
+    background-color: #efefef;
+    
+    align-items: center;
+    
+}
+
+.mini_info p {
+    margin: 0;
+}
+
+.mini_info img {
+    width: 14px;
+    height: 14px;
+    margin-right: 12px;
+}
+
+.ingredient_section {
+    margin-top: 60px;
+    border-top: 1px solid #efefef;
+
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.portion_selection {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.portion_selection span {
+    margin-right: 16px;
+}
+
+input {
+    border: 1px solid #efefef;
+    padding: 10px 5px;
+    color:black;
+    font-size: 16px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+button {
+    background-color: rgb(0,128,1);
+    color: white;
+    padding: 11px 40px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(2, 137, 2);
+}
+
+table {
+    width: 100%;
+}
+
+.table td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 12px;
+    padding-left: 32px ;
+}
+
+.sauce_headline h2 {
+    margin: 32px 10px 10px 10px;
+    font-size: 20px;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #efefef;
+}
+
+.preparation_section {
+    margin-top: 30px;
+}
+
+.preparation_section h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.prep-mini {
+    padding: 5px 12px;
+    border-radius: 9px;
+    background-color: #efefef;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prep-mini img {
+    width: 14px;
+    height: 14px;
+    margin-right: 12px;
+}
+
+.prep-mini p {
+    margin: 0;
+}
+
+.preparation_text {
+    margin-top: 25px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.credit_section {
+    margin-top: 30px;
+}
+
+.credit_section img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    margin-right: 24px;
+    object-fit: cover;
+}
+
+.credit_perso {
+    margin-top: 18px;
+    align-items: center;
+    width: 12rem;
+}
+
+.credit_perso p {
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .content {
+        padding: 4rem 5rem;
+    }
+
+    .headline-section .img {
+        margin-top: 21px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        padding: 2rem 2rem;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .ingredient_section {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .edit-area {
+        font-size: 16px;
+    }
+
+    .input {
+        min-width: 2rem;
+    }
+
+    .table td {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-radius: 8px;
+        padding-left: 32px;
+        font-size: 16px;
+    }
+}    
+
+@media screen and (max-width: 600px) {
+    .resp {
+        display: none;
+    }
+
+    /* .headline_mini_info {
+        width: 24rem;
+    } */
+
+    .headline_mini_info {
+        flex-wrap: wrap;
+        width: auto;
+        gap: 9px
+    }
+
+    .mini_info {
+        padding: 4px 7px;
+        margin-right: 9px;
+        border-radius: 8px;
+    }
+
+    .mini_info p {
+        font-size: 14px;
+    }
+
+    .prep-mini {
+        padding: 4px 7px;
+        border-radius: 8px;
+    }
+
+    .prep-mini p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    
+    .headline-section h1 {
+        font-size: 20px;
+    }
+
+    .portion_selection {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .input {
+        width: 3rem;
+        border-radius: 1rem;
+        margin-right: 20px;
+        padding: 10px 18px;
+    }
+
+    .sauce_headline h2 {
+        font-size: 18px;
+    }
+    
+    .preparation_section h2 {
+        font-size: 18px;
+    }
+
+    .credit_section img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 2.5rem;
+        margin-right: 20px;
+    }
+
+    .credit_perso p {
+        font-size: 16px;
+    }
+    
+}
